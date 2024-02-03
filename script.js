@@ -5,10 +5,14 @@ let taTocando = 0
 
 function tocarFaixa() {
     audioCapitulo.play()
+    botaoPlayPause.classList.remove('bi-play-circle.fill')
+    botaoPlayPause.classList.add('bi bi-pause-circle-fill')
 }
 
 function pausarFaixa() {
     audioCapitulo.pause()
+    botaoPlayPause.classList.remove('bi-pause-circle.fill')
+    botaoPlayPause.classList.add('bi-play-circle-fill')
 }
 
 function tocarOuPausar() {
